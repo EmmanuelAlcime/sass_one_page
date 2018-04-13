@@ -1,0 +1,42 @@
+@import ../node_modules/bootstrap/scss/bootstrap
+@import reset
+
+$header-primary: #260339
+$body-bg:#9775AA
+$links-primary:#3D1255
+$blend-primary:#764B8E
+$heading-fonts:  Lato, Roboto
+$paragrah-fonts: 'Raleway', sans-serif
+
+
+
+h1,
+h2,
+h3
+  font-family: $heading-fonts
+p
+  font-family: $paragrah-fonts
+
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+
+body
+  background-color: $body-bg 
+
+.navbar 
+  background-color: $header-primary !important
+  border: none
+  color:#FFF !important
+  opacity: 0.4
+
+.navbar-brand
+  color: #FFF !important
+
+.jumbotron
+  background:$blend-primary
+  color:#FFF !important
