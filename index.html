@@ -8,38 +8,171 @@
     <link rel="stylesheet"  href="css/site.css" media="all"/>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <title>SASS SITE</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
+    <title>sass one_page</title>
   </head>
   <body>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Watching Nature</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <nav class="navbar navbar-expand-lg " id="header">
+      <a class="navbar-brand" href="#">Watching Nature</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-       <li class="nav-item active">
-         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav mr-auto float-right">
+       <li class="nav-item ">
+         <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+         <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+         <a class="nav-link" href="#clients">Clients<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+         <a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
 </nav>     
-<div class="jumbotron">
-  <h1 class="display-4">Bird Watch</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+<div id="top" class="jumbotron">
+   <div id="jumbotron-overlay">
+        <div id="outter-holder">
+      <div id="inner-holder">
+         <h1 class="display-4 top-heading">Bird Watch</h1>
+         <p class="lead hero-text">We collect data about nature and host the biggest bird dataset.</p>
+         <a class="btn hero-btn " href="#about" role="button"><i class="fas fa-angle-double-down wow animated bounce" data-wow-duration="1500ms" data-wow-iteration="infinite"></i></a>
+      </div>
+  </div>
+   </div>
+</div><!-- jumbotron-->
+<main>
+      <article id="about" class="section section_1">
+               <div class="row">
+                 <div class="container-fluid">
+                   <div id="section_header" class="col-md-12 col-xs-12 col-lg-12 wow animated fadeInUp" data-wow-duration="1500ms" data-wow-delay="1">
+                 <h2>1000 different data types of animal behavoir</h2>
+                 <p>All available through our easily accessible api.</p>
+               </div><!-- section_header -->
+              <div id="section_desc">
+                 <section class='boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp' data-wow-duration="1500ms" data-wow-delay="3" >
+                      <img src="images/puffin_bird-512.png">
+                      <h3 class="boxes-heading">North American Birds</h3>
+                      <p>Birds migration pattern</p>
+                      <button class="view-details">view details</button>
+                      <div class="info-data"></div>
+               </section>
+                <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="1600ms" data-wow-delay="6">
+                      <img src="images/parrot.png">
+                      <h3 class="boxes-heading">South American Parrot</h3>
+                      <p>Birds migration pattern</p>
+                      <button class="view-details">view details</button>
+                      <div class="info-data"></div>
+               </section>
+                <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="1800ms" data-wow-delay="9">
+                      <img src="images/bird.svg">
+                      <h3 class="boxes-heading">Carribean Birds</h3>
+                      <p>Birds migration pattern</p>
+                      <button class="view-details">view details</button>
+                      <div class="info-data"></div>
+               </section>
+               <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="1500ms">
+                      <img src="images/bird2.png">
+                      <h3 class="boxes-heading">Carribean Birds</h3>
+                      <p>Birds migration pattern</p>
+                      <button class="view-details">view details</button>
+                      <div class="info-data"></div>
+               </section>
+              </div>
+                 </div>
+               </div><!--row-->
+      </article>
 
+      <article id="clients" class=" section section_2">
+           <div id="section_header" class="col-md-12 col-xs-12 col-lg-12">
+             <h2 id="client_header">Over a dozen brands are using our api data</h2>
+           </div><!-- section header-->
+            <div class="row">
+               <div class="container-fluid">
+                    <div id="section_spon">
+                     <section class="sponsors sp_2 col-lg-2 col-xs-12 col-md-2"><img src="images/logo-white@720px.png"></section>
+                     <section class="sponsors sp_1 col-lg-2 col-xs-12 col-md-2"><img src="images/Discovery_Animal_Planet.svg"></section>
+                     <section class="sponsors sp_3 col-lg-2 col-xs-12 col-md-2"><img src="images/National-Geographic-logo.png"></section>    
+                    </div><!-- sec description -->
+               </div><!-- container_fluid -->
+            </div><!-- row -->
+      </article>
+      <article id="contact" class=" section section_5 contact">
+           <div id="section_header" class="col-md-12 col-xs-12 col-lg-12">
+             <h2>Contact us for a free trial key</h2>
+             <p>we usaully answer api request within <b>48 hours</b></p>
+           </div><!-- section_header -->
+            <section>
+                   <div id="form-container">
+                <div class="row">
+                   <div class="container_fluid">
+                       <form id="contact_form">
+                       <div class="form-row">
+                     
+                           <div id="firstName" class="form-group col">
+                             <label>First Name <b>*</b></label>
+                             <input type="text" class="form-control" name="firstName" id="first_name">
+                          </div><!-- First Name -->
+                          <div id="lastName" class="form-group col">
+                             <label>Last Name <b>*</b></label>
+                             <input type="text" class="form-control" name="lastName" id="last_name">
+                          </div><!-- Last Name -->
+                       </div><!--row -->
 
+                      <div id="Email" class="form-group">
+                          <label>Email <b>*</b></label>
+                          <input type="email" class="form-control"  name="email_address" id="email">
+                      </div><!-- First Name -->
+                      <div id="Email" class="form-group">
+                          <label>Web Site Url <b>*</b></label>
+                          <input type="email" class="form-control" name="email_address" id="email">
+                      </div><!-- First Name -->
+                      <div id="textArea" class="form-group">
+                           <label>plan use of our api <b>*</b></label>
+                           <textarea class="form-control" placeholder="purpose of use"></textarea>
+                      </div><!-- First Name -->
+                      <div id="submit" class="form-group">
+                          <button id="form_submit">Submit</button>
+                      </div><!-- First Name -->
+                </form>
+                   </div><!-- container -->
+                </div><!-- row-->
+              </div><!-- form_container -->
+            </section>
+      </article>
+</main>
+<footer class="footer">
+  
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+     <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
+     <script>
+       $('a').smoothScroll();
+     </script>
+    <script>
+      wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+    <script src="js/navigation.js"></script>
+    <script src="js/api-data.js"></script>
   </body>
 </html>

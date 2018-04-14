@@ -1,11 +1,11 @@
 @import ../node_modules/bootstrap/scss/bootstrap
 @import reset
 
-$header-primary: #260339
+$header-primary: rgba(0, 0, 0, 0.5)
 $body-bg:#9775AA
 $links-primary:#3D1255
 $blend-primary:#764B8E
-$heading-fonts:  Lato, Roboto
+$heading-fonts:  'Lato', Roboto
 $paragrah-fonts: 'Raleway', sans-serif
 
 
@@ -24,19 +24,240 @@ p
   -ms-border-radius:     $radius
   border-radius:         $radius
 
+=transition($element)
+   -moz-transition: $element ease-in 0.3s
+   -webkit-transition: $element ease-in 0.3s
+   -ms-transition: $element ease-in 0.3s
+   transition: $element ease-in 0.3s
 
 body
   background-color: $body-bg 
+  overflow-x: hidden
+
+
+.row
+  width: 99% !important
 
 .navbar 
-  background-color: $header-primary !important
+  background-color: $blend-primary !important
   border: none
   color:#FFF !important
-  opacity: 0.4
+  z-index:999
+
+.fixed
+  width: 100%
+  heigth: 3em
+  background: #fff !important
+  position: fixed
+  top: 0
+  +transition(background)
+  z-index: 999
+  -webkit-box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05)
+  box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05)
+
+.fixed 
+  .navbar-nav li > a
+     color: $blend-primary
 
 .navbar-brand
   color: #FFF !important
+  font-family: $heading-fonts
+  font-weight: bold
+.navbar-collapse
+   position: relative
+   top: -15px
+   width:70%;
+   height: auto
+
+.navbar-nav
+  width:30%
+  height:3em
+  position: absolute
+  top: -7px
+  right:0
+
+.navbar-nav li > a
+  color: #FFF !important
+  font-size: 17px
+  font-family: $heading-fonts
+  font-weight: bold
 
 .jumbotron
-  background:$blend-primary
+  padding: 0
+  margin-bottom: 0;
+  width:100%
+  height:100vh !important
   color:#FFF !important
+  background: $blend-primary
+  background-image: url(../images/flock-1837494_960_720.png) 
+  background-position: 32% 6px
+  background-repeat: no-repeat
+  position: relative
+
+#jumbotron-overlay
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.5)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+ 
+   
+#outter-holder
+  width: 50%
+  height:20em
+  position: absolute
+  top:  126px
+  left: 321px
+
+
+#inner-holder *
+  text-align: center
+  
+.top-heading
+  z-index:999
+  font-weight: bold
+  text-shadow: 1px 1px -2px #333, 2px 1px 1px #fff
+.hero-text
+  font-size: 16px
+  font-weight: bold
+  text-shadow: 1px 1px -1px #333, 2px 1px 1px #fff
+.hero-btn 
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 164px;
+  left: 309px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 49px;
+  font-weight: bold;
+  text-transform: uppercase;
+ 
+
+.hero-btn:hover
+  outline: none
+  -moz-outline: none
+  -webkit-outline: none
+  color:#FFF
+
+
+.boxes
+  width: 28.5%
+  height: auto
+  display: inline
+  float: left
+ 
+
+
+.boxes > img 
+  width: 50%
+  height: 7.5em
+  margin-left: 10%
+
+.section
+  width: 100%
+  height: auto
+.section_1
+  height: 50rem !important
+  background: #FFF
+  position: relative
+  padding: 0
+#section_header
+  text-align: center
+  postion: relative
+  top: 80px
+
+#section_desc
+ width: 90%;
+ height: auto
+ position: relative
+ top: 170px
+ margin: 0 15px 0 15px
+ left: 102px
+.view-details
+   width: 61%
+   height: 3em;
+   color: #fff
+   font-weight: bold
+   background: $body-bg
+   border: none
+   +border-radius(10px)
+   cursor: pointer
+   text-shadow: 0px 0px 1px #000
+   -moz-text-shadow: 0px 0px 1px #000
+   -webkit-text-shadow: 0px 0px 1px #000
+   margin-left: 1%
+
+
+.boxes-heading
+   font-size: 23px;
+   margin-top: 8%;
+   margin-bottom: 3%;
+
+.section_2
+   width: 100%
+   height:  41rem
+
+.section_5
+   width: 100%
+   height: 50rem
+   background: #FFF !important
+   position: relative !important
+
+#section_spon
+   width: 86%;
+   height: auto
+   position: relative
+   top: 170px
+   margin: 0 15px 0 15px
+   left: 257px
+
+#client_header
+   color: #FFF
+   font-size: 36px
+   text-shadow: 0px 0px 0px #333, 0px 0px 1px #222
+.sponsors 
+   width: 28.5%
+   height: auto
+   display: inline
+   float: left
+   margin-left: 5%
+.sponsors > img 
+    width: 100%
+    height: auto
+
+#form-container 
+    width: 69%
+    height: auto
+    position: absolute
+    top: 200px
+    left: 196px
+
+#contact_form
+    width:900px
+    height: auto
+    margin-left: 9%
+
+#form_submit
+    width: 15%
+    height: 3em
+    background: $blend-primary
+    color: #FFF
+    font-weight: bold
+    margin-top: 3%
+    cursor: pointer
+    &hover
+      background: purple
+
+.footer
+    width:100%
+    height: 30em
+    background: #333
