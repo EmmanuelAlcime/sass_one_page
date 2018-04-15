@@ -8838,6 +8838,11 @@ code {
   margin-left: 1%;
 }
 
+.reminder {
+  margin-left: 9%;
+  display: none;
+}
+
 .boxes-heading {
   font-size: 23px;
   margin-top: 8%;

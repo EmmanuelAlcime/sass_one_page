@@ -54,7 +54,7 @@
                  <h2>1000 different data types of animal behavoir</h2>
                  <p>All available through our easily accessible api.</p>
                </div><!-- section_header -->
-               
+
               <div id="section_desc">
                  <section class='boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp' data-wow-duration="1600ms" data-wow-delay="3" >
                       <img src="images/puffin_bird-512.png">
@@ -150,7 +150,6 @@
                                           ]
                               </code>
                             </pre>
-
                          </div><!-- example code block -->
                       </div>
                </section>
@@ -180,9 +179,13 @@
              <p>we usaully answer api request within <b>48 hours</b></p>
            </div><!-- section_header -->
             <section>
+              
                    <div id="form-container">
                 <div class="row">
                    <div class="container_fluid">
+                    <div class="alert alert-success reminder" role="alert">
+                        Your <b id="name"></b> request has been sent and will be process within 24 hours.
+                    </div>
                        <form id="contact_form">
                        <div class="form-row">
                      
@@ -202,11 +205,11 @@
                       </div><!-- First Name -->
                       <div id="Email" class="form-group">
                           <label>Web Site Url <b>*</b></label>
-                          <input type="email" class="form-control" name="email_address" id="email">
+                          <input type="email" class="form-control" name="email_address" id="url">
                       </div><!-- First Name -->
                       <div id="textArea" class="form-group">
                            <label>plan use of our api <b>*</b></label>
-                           <textarea class="form-control" placeholder="purpose of use"></textarea>
+                           <textarea class="form-control" placeholder="purpose of use" id="purpose"></textarea>
                       </div><!-- First Name -->
                       <div id="submit" class="form-group">
                           <button id="form_submit">Submit</button>
@@ -246,5 +249,6 @@
     </script>
     <script src="js/navigation.js"></script>
     <script src="js/api-data.js"></script>
+    <script src="js/contact.form.js"></script>
   </body>
 </html>

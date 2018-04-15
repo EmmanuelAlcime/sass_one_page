@@ -20,21 +20,30 @@ apiExample._createBindings = function(dataContainer, dataDiv){
    	    closeBox(e, dataInfo);
    });
 };
-
 apiExample._init = function(){
   for(var i = 0; i < dataContainer.length; i++ ){
 	  this._createBindings(dataContainer[i],dataDiv[i]);
   }
 }; 
 apiExample._init();
-
 function openCode(e, dataInfo){
   // check to see if any other div is open 
-  dataInfo.style.display = "block"; // code example into view 
+  var infoWin = document.getElementsByClassName("info-data");
+  for(var j = 0; j < infoWin.length; j++){
+  	 if(infoWin[j].getAttribute("style")){
+  	 	toggleDisplay(infoWin[j]); // close existing window
+  	 	infoWin[j].removeAttribute("style"); // remove style attribute from current open window
+  	 }
+  }
+  dataInfo.style.display = "block"; // open new window 
 }
-
 function closeBox(e, dataInfo){
    dataInfo.style.display = "none"; // code example into view 
 }// close a certain box when called
 
-
+ function toggleDisplay(elementID)
+    {
+        (function(style) {
+            style.display = style.display === 'block' ? 'none' : 'block';
+        })(elementID.style);
+    }
