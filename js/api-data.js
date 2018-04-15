@@ -39,6 +39,9 @@ function openCode(e, dataInfo){
 }
 function closeBox(e, dataInfo){
    dataInfo.style.display = "none"; // code example into view 
+   if(dataInfo.getAttribute("style")){
+      dataInfo.removeAttribute("style"); // we need to clear the style attribute when we close the window.
+   }
 }// close a certain box when called
 
  function toggleDisplay(elementID)
