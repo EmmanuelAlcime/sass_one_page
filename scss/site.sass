@@ -57,7 +57,9 @@ body
 
 .fixed 
   .navbar-nav li > a
-     color: $blend-primary
+     color: $blend-primary !important
+  .navbar-brand
+     color: $blend-primary !important
 
 .navbar-brand
   color: #FFF !important
@@ -148,6 +150,23 @@ body
   -webkit-outline: none
   color:#FFF
 
+.about-btn 
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 344px;
+  left: 515px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 49px;
+  font-weight: bold;
+  text-transform: uppercase;
+ 
 
 .boxes
   width: 28.5%
@@ -161,10 +180,61 @@ body
   width: 50%
   height: 7.5em
   margin-left: 10%
+  position: relative
+
+.info-data
+  width: 300px
+  height: 300px
+  z-index: 9
+  background: #FFF
+  position: absolute
+  top: -103px
+  left: -21px
+  border: thin solid #eee
+  -webkit-box-shadow: -5px 11px 40px -32px rgba(0,0,0,0.75)
+  -moz-box-shadow: -5px 11px 40px -32px rgba(0,0,0,0.75)
+  box-shadow: -5px 11px 40px -32px rgba(0,0,0,0.75)
+  display: none
+
+.closeButton
+  display: block
+  width: 40px
+  height: 40px
+  position: absolute
+  top: -11px
+  right: -19px
+  svg
+    font-size: 16px
+    line-height: 15px
+    text-align: center
+    margin-left: 23%
+    font-size: 19px
+
+.code_heading
+  text-align: center
+  color: #a4a4a4
+  margin-top: 3%;
+  h4
+   font-size: 16px
+   text-transform: uppercase
+
+
+pre
+  width: 100%
+  height: auto
+  
+code
+  width: 46%;
+  height: auto;
+  position: relative;
+  left: -247px;
+  font-size: 12px !important;
+  color: #a4a4a4;
 
 .section
   width: 100%
   height: auto
+
 .section_1
   height: 50rem !important
   background: #FFF
@@ -173,15 +243,17 @@ body
 #section_header
   text-align: center
   postion: relative
-  top: 80px
+  top: 147px
 
 #section_desc
  width: 90%;
  height: auto
  position: relative
- top: 170px
+ top: 214px
  margin: 0 15px 0 15px
  left: 102px
+
+
 .view-details
    width: 61%
    height: 3em;
@@ -216,7 +288,7 @@ body
    width: 86%;
    height: auto
    position: relative
-   top: 170px
+   top: 203px
    margin: 0 15px 0 15px
    left: 257px
 
@@ -230,6 +302,7 @@ body
    display: inline
    float: left
    margin-left: 5%
+
 .sponsors > img 
     width: 100%
     height: auto
@@ -238,7 +311,7 @@ body
     width: 69%
     height: auto
     position: absolute
-    top: 200px
+    top: 265px
     left: 196px
 
 #contact_form
