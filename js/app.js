@@ -20,9 +20,19 @@
       	   var btn = e.target.parentNode;
       	   var _d = btn.parentNode;
       	   var _li = _d.parentNode;
-       	   _uL.removeChild(_li);
-       	   var clone = _li.cloneNode(true);
-      	   selected.appendChild(clone);
+       	   if(_uL.removeChild(_li)){
+       	      e.target.innerHTML = "remove";
+       	      if(e.target.parentNode.classList.contains("button_h")){
+       	      	  e.target.parentNode.classList.remove("button_h");
+       	      	  e.target.parentNode.classList.add("button_b");
+       	      }
+       	      if(e.target.classList.contains("view-detail")){
+                  e.target.classList.remove('view-detail');
+                  e.target.classList.add('remove-details');
+       	      }
+       	      var clone = _li.cloneNode(true);
+      	      selected.appendChild(clone);
+      	 }
       });
  	},
  	_init: function() {
