@@ -2,6 +2,7 @@
 	'use strict';
  var uRl ='/birds2.json';
  var buttonsContainer = document.getElementsByClassName("button_h");
+ var btnContainer = document.getElementsByClassName("button_b");
  var selected = document.getElementById("selectedB");
  var birdUList =document.getElementById("currentBirds");
  var added = [];
@@ -33,7 +34,25 @@
        	      var clone = _li.cloneNode(true);
       	      selected.appendChild(clone);
       	 }
-      });
+       var _removeFromList = document.getElementsByClassName("remove-details");
+       var _dnf  = document.getElementById("selectedB");
+       if(_dnf.childNodes.length > 0 ){
+       	 document.getElementById("selectedBirds").style.display = "block";
+      	for(var k=0;k< _removeFromList.length; k++){
+      	 _removeFromList[k].addEventListener("click",(e)=>{
+     	    var _btn = e.target.parentNode;
+      	    var _dd = _btn.parentNode;
+      	    var _lii = _dd.parentNode;
+       	    selected.removeChild(_lii);
+       	    if(_dnf.childNodes.length  === 0 ){
+               console.log(_dnf.length);
+               document.getElementById("selectedBirds").style.display = "none";
+               }      
+            });
+          }
+        }
+    });
+
  	},
  	_init: function() {
  	   console.log("initializing application ....");
@@ -47,4 +66,5 @@
 ajax.getData("GET", uRl, changer._renderBirdList);
 changer._init();
 
+ 
 })(window);

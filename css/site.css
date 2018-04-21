@@ -8609,6 +8609,7 @@ body {
   color: #FFF !important;
   font-family: "Lato", Roboto;
   font-weight: bold;
+  margin-left: 5%;
 }
 
 .navbar-collapse {
@@ -8810,7 +8811,7 @@ code {
 
 .section_header {
   text-align: center;
-  postion: relative;
+  position: relative;
   top: 147px;
 }
 
@@ -8965,6 +8966,10 @@ code {
   margin-left: 2%;
 }
 
+#selectedBirds {
+  display: none;
+}
+
 .row-4 {
   width: 9%;
   height: auto;
@@ -8992,7 +8997,7 @@ code {
 
 .section_2 {
   width: 100%;
-  height: 41rem;
+  height: 9rem;
 }
 
 .section_3 {

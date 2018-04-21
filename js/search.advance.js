@@ -18,7 +18,7 @@
 		if(e.target.value.length > 0){
              searchListUL.style.display = "block";
              birdCall.style.display = "none";
-             ajax.getData("GET", uRl, handleSearch);
+             ajax.getData("GET", file, handleSearch);
 
 		}else if(e.target.value.length <= 0){
 			  birdCall.style.display = "block";
