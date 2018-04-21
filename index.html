@@ -13,7 +13,7 @@
   </head>
   <body>
   <nav class="navbar navbar-expand-lg " id="header">
-      <a class="navbar-brand" href="#top">Watching Nature</a>
+      <a class="navbar-brand" href="#top">Watching <i class="fas fa-binoculars"></i> Nature</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,14 +50,14 @@
       <article id="about" class="section section_1">
                <div class="row">
                  <div class="container-fluid">
-                   <div id="section_header" class="col-md-12 col-xs-12 col-lg-12 wow animated fadeInUp" data-wow-duration="1500ms" data-wow-delay="1">
-                 <h2>1000 different data types of animal behavoir</h2>
-                 <p>All available through our easily accessible api.</p>
-               </div><!-- section_header -->
+                   <div class="section_header" class="col-md-12 col-xs-12 col-lg-12 wow animated fadeInUp" data-wow-duration="1500ms" data-wow-delay="1">
+                    <h2>1000 different data types of animal behavoir</h2>
+                    <p>All available through our easily accessible api.</p>
+                  </div><!-- section_header -->
 
               <div id="section_desc">
                  <section class='boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp' data-wow-duration="1600ms" data-wow-delay="3" >
-                      <img src="images/puffin_bird-512.png">
+                      <img src="images/puffin_bird-512.png" alt="bird this">
                       <h3 class="boxes-heading">North American Birds</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
@@ -83,7 +83,7 @@
                     <div class="triangle"></div>
                </section>
                 <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="1800ms" data-wow-delay="6">
-                      <img src="images/parrot.png">
+                      <img src="images/parrot.png" alt="bird this">
                       <h3 class="boxes-heading">South American Parrot</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
@@ -109,7 +109,7 @@
                     <div class="triangle"></div>
                </section>
                 <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="2000ms" data-wow-delay="9">
-                      <img src="images/bird.svg">
+                      <img src="images/bird.svg" alt="bird this">
                       <h3 class="boxes-heading">Carribean Birds</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
@@ -135,7 +135,7 @@
                     <div class="triangle"></div>
                </section>
                <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="2300ms">
-                      <img src="images/bird2.png">
+                      <img src="images/bird2.png" alt="bird this">
                       <h3 class="boxes-heading">Carribean Birds</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
@@ -167,8 +167,8 @@
       </article>
 
       <article id="clients" class=" section section_2">
-           <div id="section_header" class="col-md-12 col-xs-12 col-lg-12">
-             <h2 id="client_header">Over a dozen brands are using our api data</h2>
+           <div class="section_header" class="col-md-12 col-xs-12 col-lg-12">
+             <h2 class="" ="client_header">Over a dozen brands are using our api data</h2>
            </div><!-- section header-->
             <div class="row">
                <div class="container-fluid">
@@ -179,6 +179,29 @@
                     </div><!-- sec description -->
                </div><!-- container_fluid -->
             </div><!-- row -->
+      </article>
+       <article id="customAPI" class=" section section_3 customAPI">
+               <div class="sec_header">
+                  <h2 class="client_header">Data Customization Example</h2>
+                  <p >you can customize your data by adding or removing bird spices from the api call.</p>
+               </div><!-- section_header -->
+          <div class="row-b">
+            <section id="picker" class="row-8">
+          <div class="name_header">
+             <h3>Birds List</h3>
+             <input type="search" name="search" id="search" placeholder="search">
+          </div>
+           <ul id="searchList"></ul>
+          <ul id="currentBirds"></ul>
+        </section><!-- bird picker-->
+
+        <aside id="selectedBirds" class="row-4">
+           <div id="addedHeader">
+             <h3>Add to Api</h3>
+           </div>
+            <ul id="selectedB"></ul>
+        </aside><!-- selected birds -->
+          </div><!-- row -->
       </article>
       <article id="contact" class=" section section_5 contact">
            <div id="section_header" class="col-md-12 col-xs-12 col-lg-12">
@@ -229,7 +252,7 @@
       </article>
 </main>
 <footer class="footer">
-  <div class="tpl-footer__logo"><img src="/images/puffin_bird-512.png" alt="Xello logo"></div>
+  <div class="tpl-footer__logo"><img src="/images/puffin_bird-512.png" alt="bird logo"></div>
   <ul class="tpl-footer__ul">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact.html">Contact Us</a></li>
@@ -285,6 +308,9 @@
     <script src="js/navigation.js"></script>
     <script src="js/api-data.js"></script>
     <script src="js/contact.form.js"></script>
+    <script src="js/request.ajax.js"></script>
+    <script src="js/app.js"></script>
+     <script src="js/search.advance.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </body>
 </html>
