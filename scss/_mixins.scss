@@ -1,0 +1,70 @@
+@mixin clearFix{
+  &::after{
+      content: " ";
+      clear: both;
+      display: table; 
+  }
+}
+
+@mixin style-link-text($col) {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: $col;
+}
+
+
+
+@mixin respond($size) {
+  
+  
+}
+
+
+@function divide($a, $b) {
+  @return  $a / $b;
+}
+
+
+
+
+
+
+//%btn-placeholder{
+ //  padding: 10px;
+ //  display: inline-block;
+//   text-align: center;
+//   border-radius: 100px;
+//   width: $width-botton;
+  // @include style-link-text($color-secondaire);
+//}
+
+
+//nav{
+  // margin: divide(60,2) * 1px;
+ //  background-color: $color-primary;
+ //  @include clearFix ;
+//}
+
+//.btn{
+  // @extend %btn-placeholder;
+// }
+
+//.btn__second{
+ //  @extend %btn-placeholder;
+
+
+
+
+=border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  -ms-border-radius:     $radius;
+  border-radius:         $radius;
+  }
+
+=transition($element){
+   -moz-transition: $element ease-in 0.3s;
+   -webkit-transition: $element ease-in 0.3s;
+   -ms-transition: $element ease-in 0.3s;
+   transition: $element ease-in 0.3s;
+}

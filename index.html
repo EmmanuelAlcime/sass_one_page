@@ -34,11 +34,12 @@
       </li>
     </ul>
   </div>
-</nav>     
+</nav>    
+
 <div id="top" class="jumbotron">
-   <div id="jumbotron-overlay">
-        <div id="outter-holder">
-      <div id="inner-holder">
+   <div id="jumbotron--overlay">
+        <div class="jumbotron--overlay__outter-holder">
+      <div class="jumbotron--overlay__inner-holder">
          <h1 class="display-4 top-heading wow animated fadeInUp" data-wow-duration="1600ms" data-wow-delay="20">Bird Watch</h1>
          <p class="lead hero-text wow animated fadeInUp" data-wow-duration="1600ms" data-wow-delay="20">We collect data about nature and host the biggest bird dataset.</p>
          <a class="btn hero-btn " href="#about" role="button"><i class="fas fa-angle-double-down wow animated bounce" data-wow-duration="1500ms" data-wow-iteration="infinite"></i></a>
@@ -46,6 +47,7 @@
   </div>
    </div>
 </div><!-- jumbotron-->
+
 <main>
       <article id="about" class="section section_1">
                <div class="row">
@@ -56,14 +58,14 @@
                   </div><!-- section_header -->
 
               <div id="section_desc">
-                 <section class='boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp' data-wow-duration="1600ms" data-wow-delay="3" >
+                 <section class='boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp' data-wow-duration="2000ms" data-wow-delay="3" >
                       <img src="images/puffin_bird-512.png" alt="bird this">
                       <h3 class="boxes-heading">North American Birds</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
                       <div class="info-data">
-                         <a href="javascript:" class="closeButton"><i class="far fa-times-circle"></i></a><!-- close button-->
-                         <div class="code_heading"><h4>example api call</h4></div><!-- heading -->
+                         <a href="javascript:" class="closeButton"><i class="closeButton--svg far fa-times-circle"></i></a><!-- close button-->
+                         <div class="code--heading"><h4 class="code--heading__text">example api call</h4></div><!-- heading -->
                          <div class="example_code_block">
                             <pre>
                               <code class="prettyprint lang-json">
@@ -82,14 +84,14 @@
                     </div>
                     <div class="triangle"></div>
                </section>
-                <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="1800ms" data-wow-delay="6">
+                <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="2000ms" data-wow-delay="6">
                       <img src="images/parrot.png" alt="bird this">
                       <h3 class="boxes-heading">South American Parrot</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
                       <div class="info-data">
-                          <a href="javascript:" class="closeButton"><i class="far fa-times-circle"></i></a><!-- close button-->
-                          <div class="code_heading"><h4>example api call</h4></div><!-- heading -->
+                          <a href="javascript:" class="closeButton"><i class="closeButton--svg far fa-times-circle"></i></a><!-- close button-->
+                          <div class="code--heading"><h4 class="code--heading__text">example api call</h4></div><!-- heading -->
                          <div class="example_code_block">
                             <pre>
                               <code class="prettyprint lang-json">
@@ -114,8 +116,8 @@
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
                       <div class="info-data">
-                         <a href="javascript:" class="closeButton"><i class="far fa-times-circle"></i></a><!-- close button-->
-                         <div class="code_heading"><h4>example api call</h4></div><!-- heading -->
+                         <a href="javascript:" class="closeButton"><i class="closeButton--svg far fa-times-circle"></i></a><!-- close button-->
+                         <div class="code--heading"><h4 class="code--heading__text">example api call</h4></div><!-- heading -->
                          <div class="example_code_block">
                             <pre>
                               <code class="prettyprint lang-json">
@@ -134,14 +136,14 @@
                     </div>
                     <div class="triangle"></div>
                </section>
-               <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="2300ms">
+               <section class="boxes col-xs-12 col-md-3 col-lg-3 wow animated fadeInUp" data-wow-duration="2000ms">
                       <img src="images/bird2.png" alt="bird this">
                       <h3 class="boxes-heading">Carribean Birds</h3>
                       <p>Birds migration pattern</p>
                       <button class="view-details">view details</button>
                       <div class="info-data">
-                         <a href="javascript:" class="closeButton"><i class="far fa-times-circle"></i></a><!-- close button-->
-                         <div class="code_heading"><h4>example api call</h4></div><!-- heading -->
+                         <a href="javascript:" class="closeButton"><i class="closeButton--svg far fa-times-circle"></i></a><!-- close button-->
+                         <div class="code--heading"><h4 class="code--heading__text">example api call</h4></div><!-- heading -->
                          <div class="example_code_block">
                             <pre>
                               <code class="prettyprint lang-json">
@@ -181,9 +183,9 @@
             </div><!-- row -->
       </article>
        <article id="customAPI" class=" section section_3 customAPI">
-               <div class="sec_header">
-                  <h2 class="client_header">Data Customization Example</h2>
-                  <p >you can customize your data by adding or removing bird spices from the api call.</p>
+               <div class=".section--sec--header">
+                  <h2 class="section--sec--header__client__header">Data Customization Example</h2>
+                  <p class="section--sec--header__client__paragraph">you can customize your data by adding or removing bird spices from the api call.</p>
                </div><!-- section_header -->
           <div class="row-b">
             <section id="picker" class="row-8">
@@ -252,8 +254,8 @@
       </article>
 </main>
 <footer class="footer">
-  <div class="tpl-footer__logo"><img src="/images/puffin_bird-512.png" alt="bird logo"></div>
-  <ul class="tpl-footer__ul">
+  <div class="footer--logo"><img src="/images/puffin_bird-512.png" alt="bird logo"></div>
+  <ul class="footer--ul">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact.html">Contact Us</a></li>
                 <li><a href="#clients">Clients</a></li>

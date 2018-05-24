@@ -8611,6 +8611,10 @@ body {
   font-weight: bold;
   margin-left: 5%;
 }
+.navbar-brand svg {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
 .navbar-collapse {
   position: relative;
@@ -8737,6 +8741,7 @@ body {
   height: 4.5em;
   margin-left: 19%;
   position: relative;
+  object-fit: contain;
 }
 
 .info-data {
@@ -8961,7 +8966,7 @@ code {
 }
 
 .row-8 {
-  width: 19%;
+  width: 29.6%;
   height: auto;
   margin-left: 2%;
 }
@@ -9071,6 +9076,7 @@ code {
   width: 61%;
   height: 45px;
   margin-top: 0.5%;
+  object-fit: contain;
 }
 
 .nameH {

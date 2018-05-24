@@ -35,8 +35,11 @@
       	      selected.appendChild(clone);
       	 }
        var _removeFromList = document.getElementsByClassName("remove-details");
+       var div = document.getElementsByClassName('row-8')[0];
        var _dnf  = document.getElementById("selectedB");
        if(_dnf.childNodes.length > 0 ){
+       	 div.style.width = "19%";
+       	 div.style.transition = "width 1s";
        	 document.getElementById("selectedBirds").style.display = "block";
       	for(var k=0;k< _removeFromList.length; k++){
       	 _removeFromList[k].addEventListener("click",(e)=>{
@@ -47,6 +50,8 @@
        	    if(_dnf.childNodes.length  === 0 ){
                console.log(_dnf.length);
                document.getElementById("selectedBirds").style.display = "none";
+               div.style.width = "29.6%";
+               div.style.transition = "width 1s";
                }      
             });
           }
@@ -67,4 +72,4 @@ ajax.getData("GET", uRl, changer._renderBirdList);
 changer._init();
 
  
-})(window);
+})();
