@@ -6,6 +6,9 @@
  var selected = document.getElementById("selectedB");
  var birdUList =document.getElementById("currentBirds");
  var added = [];
+
+
+
  var changer = {
  	_renderBirdList: function (data){
  		console.log("_renderBirdList function called.....");
@@ -68,7 +71,7 @@
  	   },4000); // wait before calling _bindingsDiv function
  	}
  };
-ajax.getData("GET", uRl, changer._renderBirdList);
+connection.getData("GET", uRl, changer._renderBirdList);
 changer._init();
 
  

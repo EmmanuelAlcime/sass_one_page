@@ -1,4 +1,9 @@
-var ajax = {
+(function(global){
+  
+  'use strict';
+ 
+ var ajax = {
+ 
     createRequestObject: function(){
    var ajaxRequest; // The variable that makes Ajax possible!
   try{
@@ -20,6 +25,7 @@ catch (e){
     }
    return ajaxRequest;
   },
+
  getData: function(methodType,url,callback){
     var response;
     var request = this.createRequestObject();
@@ -34,6 +40,9 @@ catch (e){
     };
     request.send();
     console.log("request sent to server for processing....");
- },
+     }
+  }; // ajax Object
+     global.connection = ajax;
 
-};
+})(window);
+

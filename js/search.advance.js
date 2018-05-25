@@ -4,6 +4,7 @@
 *
 *
 ***/
+
 (function(){
 	'use strict';
 	var file = '/birds2.json';
@@ -27,7 +28,7 @@
 		if(e.target.value.length > 0){
              searchListUL.style.display = "block";
              birdCall.style.display = "none";
-             ajax.getData("GET", file, handleSearch);
+             connection.getData("GET", file, handleSearch);
 
 		}else if(e.target.value.length <= 0){
 			  birdCall.style.display = "block";
