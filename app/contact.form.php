@@ -1,10 +1,10 @@
 <?php
 
-  $fname =  strslashes( trim( $_POST['fname'] ));
-  $lname =  strslashes( trim( $_POST['lname'] ));
-  $email =  strslashes( trim( $_POST['email']));
-  $url =    strslashes( trim( $_POST['url']));
-  $comment = strslashes( trim( $_POST['comment']));
+  $fname =  stripslashes( trim( $_POST['fname'] ));
+  $lname =  stripslashes( trim( $_POST['lname'] ));
+  $email =  stripslashes( trim( $_POST['email']));
+  $url =    stripslashes( trim( $_POST['url']));
+  $comment = stripslashes( trim( $_POST['comment']));
 
   try{
         if(!empty($fname) && !empty($comment)){
