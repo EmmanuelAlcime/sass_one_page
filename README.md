@@ -29,7 +29,7 @@
 
 
   2.  **Blocks, Elements and Modifiers (B.E.M )** 
-      No matter what methodology you choose to use in your projects, you will benefit from the advantages of more structured CSS and UI.
+      No matter what methodology you choose to use in your projects, you will benefit from the advantages of more structured **CSS** and **UI**.
 
       Some styles are less strict and more flexible, while others are easier to understand and adapt in a team.
 
