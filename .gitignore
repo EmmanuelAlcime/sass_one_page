@@ -1,5 +1,9 @@
 bower_components/
 node_modules/
+birds.json
+css/site.css
+
+
 #add 'node_modules' to .gitignore file
 
 #git rm -r --cached node_modules
