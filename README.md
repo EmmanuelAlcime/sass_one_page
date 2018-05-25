@@ -1,11 +1,11 @@
   # Sass Modular Css Web Application
-  ---
+  
   
   a very simple case study of implementing **modular** and **reusable**  **Sass**.
   the project which is a one page application focuses on writing **clean production code** using the following principles.
 
   
-  1.Semantic HTML5  Elements princeples
+  1.**Semantic HTML5  Elements princeples**
 
      ```<header>``` defines a header for the document or a section
 
@@ -28,14 +28,14 @@
 
 
 
-  2.  ** Blocks, Elements and Modifiers (B.E.M ) **
+  2.  **Blocks, Elements and Modifiers (B.E.M )** 
       No matter what methodology you choose to use in your projects, you will benefit from the advantages of more structured CSS and UI.
 
       Some styles are less strict and more flexible, while others are easier to understand and adapt in a team.
 
-        **B.E.M** prrovides developers a better way to write  ** Maintainable CSS **
+        **B.E.M** prrovides developers a better way to write  **Maintainable CSS**
 
-  3.  ###Maintainable JavaScript
+  3.   **Maintainable JavaScript**
 
        Design Patterns and Practices
 
@@ -43,6 +43,6 @@
 
        Observer Pattern
 
-       ** Self-Executing Anonymous Function ** which will assist in preventing naming collisions.
+       Self-Executing Anonymous Function  which will assist in preventing naming collisions.
 
   
