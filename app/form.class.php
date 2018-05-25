@@ -1,3 +1,4 @@
+<?php
 class Contact{
   public $firstName;
   public $lastName;
@@ -21,3 +22,4 @@ class Contact{
     $stmt->execute();
   }
 }
+?>
