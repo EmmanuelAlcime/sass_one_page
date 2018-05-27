@@ -9,7 +9,9 @@
   background-image: url(../images/flock-1837494_960_720.png);
   background-position: 32% 6px;
   background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
 
 
   &--overlay{
@@ -26,10 +28,11 @@
       width: 50%;
       height:20em;
       position: absolute;
-      top:  50%;
-      left: 50%;
-      transform:translate(-50%,-50%);
-      } 
+      top:40%;
+      left: 50%; 
+      transform: translate(-50%,-50%);
+      text-align: center;
+    } 
       
       &__inner-holder *{
         text-align: center

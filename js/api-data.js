@@ -1,3 +1,6 @@
+;(function(global){
+
+   'use strict';
 /*
 * AUTHOR: Emmanuel Alcime
 * DATE: 04/14/2018
@@ -57,3 +60,7 @@ function closeBox(e, dataInfo, triangle){
             style.display = style.display === 'block' ? 'none' : 'block';
         })(elementID.style);
     }
+    // global access for apiExample through apiBox.
+    global.apiBox = apiExample; 
+})(window);
+ 

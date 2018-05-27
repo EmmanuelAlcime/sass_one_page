@@ -1,0 +1,20 @@
+
+h1,
+h2,
+h3{
+  font-family: $heading-fonts
+}
+
+p{
+  font-family: $paragrah-fonts
+}
+
+
+body{
+  background-color: $body-bg 
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+}

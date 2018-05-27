@@ -1,6 +1,16 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-sass/stylesheets/bootstrap';
 @import 'reset';
-@import 'varibles';
-@import 'mixins';
+
+
+@import 'abstracts/varibles';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+
+
+@import 'base/bases';
+
+
 @import "layout/header";
 @import "layout/footer";
+@import "layout/features"
