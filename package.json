@@ -10,12 +10,12 @@
     "Emmanuel Alcime <emmanuelalcime54@gmail.com>"
   ],
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/site.css -w",
-    "compile:sass": "node-sass sass/main.scss css/site.comp.css",
+    "compile:sass": "sass scss/main.scss css/site.comp.css",
     "concat:css": "concat -o css/style.prod.css  css/fonts.css css/basic-fonts.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' style.prod.css",
     "compress:css": "node-sass  css/style.prefix.css css/style.css --output-style.css",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "view:site":" browser-sync start --server "
   },
   "pre-commit": [
     "lint"

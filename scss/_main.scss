@@ -1,16 +1,22 @@
-@import '../node_modules/bootstrap-sass/stylesheets/bootstrap';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'reset';
 
 
 @import 'abstracts/varibles';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
-
-
-
-@import 'base/bases';
-
-
+ 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/features"
+@import "layout/features";
+@import 'components/boxes';
+
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/sections';
+
+@import 'base/bases';
+@import 'base/animations';
+@import 'base/typography';
+
+

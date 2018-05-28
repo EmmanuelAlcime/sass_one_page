@@ -3,6 +3,8 @@
   border: none;
   color:#FFF !important;
   z-index:999;
+  height: 4rem;
+  margin: 0px;
 }
 
 .fixed{
@@ -11,21 +13,24 @@
   background: #fff !important;
   position: fixed;
   top: 0;
-  +transition(background);
   z-index: 999;
   -webkit-box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05);
   box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05);
 }
 
 .fixed{
-  .navbar-nav li > a
-     color: $blend-primary !important
-  .navbar-brand
-     color: $blend-primary !important
+  .navbar-nav li > a{
+     color: $blend-primary !important;
+   }
+
+  .navbar-brand{
+     color: $blend-primary !important;
+  }
 }
 
 
 .navbar-brand{
+  width: 118%;
   color: #FFF !important;
   font-family: $heading-fonts;
   font-weight: bold;
@@ -34,22 +39,38 @@
    margin-left: 2%;
    margin-right: 2%;
   }
+  @include respond($phone){
+    margin-left: 0;
+    width: 60%;
+  }
+  @include respond($tablet-portrait){
+    margin-left: 0;
+    width: 70%;
+  }
+  @include respond($tablet-landscape){
+    margin-left: 0;
+    width: 70%;
+  }
 }
 
 
 .navbar-collapse{
    position: relative;
    top: -15px;
-   width:70%;
+   width:100%;
    height: auto;
  }
 
 .navbar-nav{
-  width:30%;
+  width:41%;
   height:3em;
   position: absolute;
-  top: -7px;
+  top: 20px;
   right:0;
+  @include respond($tablet-landscape){
+    margin-right: 0;
+    width: 47%;
+  }
 }
 
 .navbar-nav li > a{

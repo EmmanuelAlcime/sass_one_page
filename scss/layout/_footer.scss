@@ -1,8 +1,8 @@
 .footer{
-    width:100%
-    height: 11.5em
-    background: #333
-    position: relative
+    width:100%;
+    height: 11.5em;
+    background: #333;
+    position: relative;
     
     &--logo {
       position: absolute;
@@ -18,39 +18,40 @@
       }
     
     &--ul{
-       width: 40%
-       heigh: 2em
-       list-style-type: none
-       display: flex
-       flex-direction: row
-       position: absolute
-       top: 58px
-       left: 485px
+       width: 40%;
+       heigh: 2em;
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+       position: absolute;
+       top: 58px;
+       left: 485px;
      li {
-        width: 20%
-        height: 2em
+        width: 20%;
+        height: 2em;
      a {
-       display: block
-       width: 100%
-       height: 2em
-       color: #fff
-       text-align: center
+       display: block;
+       width: 100%;
+       height: 2em;
+       color: #fff;
+       text-align: center;
     }
   }
+}
 }
    
 
 
 
 
-.tpl-footer--social{
+.tpl--footer--social{
   width: 40%;
   height: 3em;
   position: absolute;
   top: 118px;
   left: 578px;
   
-  .tpl-footer--social__ul{
+  &--footer--social__ul{
      list-style-type: none;
      width: 100%;
      height: 3em;

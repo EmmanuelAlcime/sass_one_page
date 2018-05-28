@@ -1,4 +1,21 @@
 
+$color-grey-dark: #777;
+
+$color-white: #FFF;
+$color-black: #000;
+
+
+//Font 
+$default-font-size: 1.6rem;
+
+//Grid 
+$grid-width:114rem;
+$gutter-verticle: 8rem;
+$gutter-verticle-small: 6em;
+$gutter-horizontal: 2rem;
+
+
+$color-white: #FFF;
 $header-primary: rgba(0, 0, 0, 0.5);
 $body-bg:#9775AA;
 $links-primary:#3D1255;
@@ -7,15 +24,12 @@ $heading-fonts:  'Lato', Roboto;
 $paragrah-fonts: 'Raleway', sans-serif;
 $break-small: 320px;
 $break-large: 1200px;
+
 $information-phone: "only screen and (max-width : 320px)";
 $phone : '(max-width: 480px)';
 $tablet-portrait: '(max-width: 767px)';
 $tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
 $large-desktop: '(min-width: 1200px)';
 $non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
-$retina: '(min--moz-device-pixel-ratio: 1.5), 
-                    (-o-min-device-pixel-ratio: 3/2), 
-                    (-webkit-min-device-pixel-ratio: 1.5), 
-                    (min-device-pixel-ratio: 1.5), 
-                    (min-resolution: 144dpi), 
-                    (min-resolution: 1.5dppx)';
+
+$retina: '(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx)';

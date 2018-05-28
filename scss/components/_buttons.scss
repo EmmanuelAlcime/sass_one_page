@@ -1,15 +1,27 @@
 
-.btn {
+.btn{
   &:link,
   &:visited{
      text-transform: uppercase;
-     text-decoration: none;
-     padding:  15px 40px; 
-     display: inline-block;
-     border-radius: 100px;
-     transition: all .2s;
-     position: relative;
-
+    text-decoration: none;
+    padding: 20px 42px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+    width: 42%;
+  @include respond($phone){
+    margin-top: 8%;
+    padding: 14px 33px;
+  }
+  @include respond($tablet-portrait){
+     margin-top: 8%;
+     padding: 14px 33px;
+  }
+  @include respond($tablet-landscape){
+    margin-top: 8%;
+    padding: 14px 33px;
+    }
   }
 
   &:hover {
