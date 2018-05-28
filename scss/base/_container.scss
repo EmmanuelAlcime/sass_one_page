@@ -1,0 +1,17 @@
+.container {
+  @include push--sides($page-gutter);
+  position: relative;
+  max-width: $max-width;
+
+  @include respond(tablet) {
+    @include push--sides($page-gutter--tablet);
+  }
+
+  @include respond(desktop) {
+    @include push--sides($page-gutter--desktop);
+  }
+
+  @include respond(em($max-width + (2 * $page-gutter--desktop))) {
+    @include push--auto;
+  }
+}

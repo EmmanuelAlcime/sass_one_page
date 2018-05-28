@@ -1,19 +1,22 @@
 .navbar {
   background-color: $blend-primary !important;
-  border: none;
+  border: none !important;
+  border-radius: 0px !important;
   color:#FFF !important;
   z-index:999;
   height: 4rem;
   margin: 0px;
+  transition: all ease 0.4s;
 }
 
 .fixed{
   width: 100%;
-  heigth: 3em;
+  height: 4em;
   background: #fff !important;
   position: fixed;
   top: 0;
   z-index: 999;
+  transition: all ease 0.4s;
   -webkit-box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05);
   box-shadow: 0 .25rem .125rem 0 rgba(0,0,0,.05);
 }
@@ -25,6 +28,7 @@
 
   .navbar-brand{
      color: $blend-primary !important;
+     margin-top: 4.5%;
   }
 }
 
@@ -34,7 +38,7 @@
   color: #FFF !important;
   font-family: $heading-fonts;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 7%;
   svg{
    margin-left: 2%;
    margin-right: 2%;
@@ -62,7 +66,7 @@
  }
 
 .navbar-nav{
-  width:41%;
+  width:39%;
   height:3em;
   position: absolute;
   top: 20px;
